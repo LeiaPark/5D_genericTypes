@@ -54,7 +54,10 @@ public class FibPair {
         the small number is the the old big number
      */
     private static Pair<Integer> nextPairAfter( Pair<Integer> givenPair) {
-        return new Pair<Integer>(givenPair.getFirst() + givenPair.getSecond(), givenPair.getFirst());
+        Pair<Integer> newPair = new Pair<Integer>(givenPair.getFirst() + givenPair.getSecond(), givenPair.getFirst());
+        return newPair;
+        // unsuccessful instantiation of an instance of such a class, caught by the compiler
+        // return new Pair<String>(givenPair.getFirst() + givenPair.getSecond(), givenPair.getFirst());
     }
 
     /**
