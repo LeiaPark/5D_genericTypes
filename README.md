@@ -21,67 +21,70 @@ in [UserSavedByCompiler](https://github.com/stuyvesant-cs/solutionsHolmes/blob/2
 
 - definition that a class / type that is parameterized by a generic type, `T`:
 ```
-your exemplifying line from the Pair example here
+public class Pair<T> 
 ```
-in [class](URL)
+in [Pair](https://github.com/LeiaPark/5D_genericTypes/blob/master/FibPair/Pair.java#L8)
 
 
 - declaration of a variable that can hold a reference to an instance
 of such a class:
 ```
-your exemplifying line from the Pair example here
+private T first;
+private T second;
 ```
-in [class](URL)
+in [Pair](https://github.com/LeiaPark/5D_genericTypes/blob/master/FibPair/Pair.java#L10)
 
 
 - assignment to such a variable:
 ```
-your exemplifying line from the Pair example here
+this.first =  first;
+this.second = second;
 ```
-in [class](URL)
+in [Pair](https://github.com/LeiaPark/5D_genericTypes/blob/master/FibPair/Pair.java#L14)
 
 
 - declaration of a method that returns an instance of such a type:
 ```
-your exemplifying line from the Pair example here
+public T getFirst()  { return first; }
+public T getSecond() { return second; }
 ```
-in [class](URL)
+in [Pair](https://github.com/LeiaPark/5D_genericTypes/blob/master/FibPair/Pair.java#L22)
 
 
 - successful instantiation of an instance of such a class:
 ```
-your exemplifying line from the Pair example here
+Pair<Integer> newPair = new Pair<Integer>(givenPair.getFirst() + givenPair.getSecond(), givenPair.getFirst());
 ```
-in [class](URL)
+in [FibPair](https://github.com/LeiaPark/5D_genericTypes/blob/master/FibPair/FibPair.java#L57)
 
 
 - *un*successful instantiation of an instance of such a class,
 caught by the compiler:
 ```
-your exemplifying line from the Pair example here
+return new Pair<String>(givenPair.getFirst() + givenPair.getSecond(), givenPair.getFirst());
 ```
-in [class](URL)
+in [FibPair](https://github.com/LeiaPark/5D_genericTypes/blob/master/FibPair/FibPair.java#L60)
 
 
 - a variable that can hold a reference to an instance of the generic type
 in a class / type that is parameterized by a generic type:
 ```
-your exemplifying line from the Pair example here
+Pair<Integer> newPair = new Pair<Integer>(givenPair.getFirst() + givenPair.getSecond(), givenPair.getFirst());
 ```
-in [class](URL)
+in [FibPair](https://github.com/LeiaPark/5D_genericTypes/blob/master/FibPair/FibPair.java#L57)
 
 
 - the declaration of a method or constructor that accepts a parameter of a generic type:
 ```
-your exemplifying line from the Pair example here
+private static Pair<Integer> nextPairAfter( Pair<Integer> givenPair)
 ```
-in [class](URL)
+in [FibPair](https://github.com/LeiaPark/5D_genericTypes/blob/master/FibPair/FibPair.java#L56)
 
 
 - the declaration of a method that returns a value of a generic type:
 ```
-your exemplifying line from the Pair example here
+private static Pair<Integer> nextPairAfter( Pair<Integer> givenPair)
 ```
-in [class](URL)
+in [FibPair](https://github.com/LeiaPark/5D_genericTypes/blob/master/FibPair/FibPair.java#L56)
 
 
